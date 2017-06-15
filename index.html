@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Punkass Princess</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="desktop-nav">
+  <div class="nav-container">
+    <div id="logo">
+      <h1>Punkass Princess</h1>
+    </div>
+    <ul id="desktop-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">Merch</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div id="container">
+    <div class="twitch-container">
+      <div class="twitch-video">
+      <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+        <div id="punkass"></div>
+        <script type="text/javascript">
+	         var options = {
+		       width: "100%",
+		       height: "100%",
+		       channel: "punkassprincess",
+           //video: "v151857359"
+	        };
+	        var player = new Twitch.Player("punkass", options);
+	        player.setVolume(0.5);
+          </script>
+          <div class="twitch-chat">
+          <iframe frameborder="0"
+            scrolling="yes"
+            id="chat_embed"
+            src="http://www.twitch.tv/punkassprincess/chat"
+            height="500px"
+            width="100%">
+          </iframe>
+        </div>
+        </div class="twitch-video">
+    </div>
+  </div>
+</body>
+</html>
